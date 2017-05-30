@@ -1,0 +1,12 @@
+/home/patjas/Pulpit/Sudoku/Sudoku/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/patjas/Pulpit/Sudoku/Sudoku/obj/x86/Debug/Sudoku.gtk-gui.gui.stetic
+/home/patjas/Pulpit/Sudoku/Sudoku/bin/Debug/Sudoku.exe.mdb
+/home/patjas/Pulpit/Sudoku/Sudoku/bin/Debug/Sudoku.exe
+/home/patjas/Pulpit/Sudoku/Sudoku/obj/x86/Debug/Sudoku.exe
+/home/patjas/Pulpit/Sudoku/Sudoku/obj/x86/Debug/Sudoku.exe.mdb
+/home/patrykj/Pobrane/Sudoku-master/Sudoku/Sudoku/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/patrykj/Pobrane/Sudoku-master/Sudoku/Sudoku/obj/x86/Debug/Sudoku.gtk-gui.gui.stetic
+/home/patrykj/Pobrane/Sudoku-master/Sudoku/Sudoku/obj/x86/Debug/Sudoku.exe
+/home/patrykj/Pobrane/Sudoku-master/Sudoku/Sudoku/obj/x86/Debug/Sudoku.exe.mdb
+/home/patrykj/Pobrane/Sudoku-master/Sudoku/Sudoku/bin/Debug/Sudoku.exe.mdb
+/home/patrykj/Pobrane/Sudoku-master/Sudoku/Sudoku/bin/Debug/Sudoku.exe
