@@ -29,7 +29,7 @@ namespace Sudoku
 			}
 		}
 			
-		private void ustaw_pole (int n)
+		public void ustaw_pole (int n)
 		{
 			if (wybrany == null)
 				return;
