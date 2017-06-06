@@ -9,7 +9,7 @@ namespace Sudoku
 	{	
 		private int [,] zapis = new int[9,9];
 		private bool gra_wystart=false;
-		private Plansza wybrany;
+		public Plansza wybrany;
 		public List<PlanszBox> k_boxes = new List<PlanszBox> ();
 
 

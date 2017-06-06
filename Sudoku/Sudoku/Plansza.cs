@@ -32,10 +32,10 @@ namespace Sudoku
 		{
 			foreach (PlanszBox pb in r_gra.k_boxes) {
 				foreach (Plansza pl in pb.lista) {
-					if (f.set == false)
-						f.ustalony.ModifyBg (StateType.Normal, stan.nieaktywny);
+					if (pl.set == false)
+						pl.ustalony.ModifyBg (StateType.Normal, stan.nieaktywny);
 					else
-						f.ustalony.ModifyBg (StateType.Normal, stan.zablokowany);
+						pl.ustalony.ModifyBg (StateType.Normal, stan.zablokowany);
 				}
 			}
 			if (this.set == false)
