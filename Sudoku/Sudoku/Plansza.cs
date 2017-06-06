@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 namespace Sudoku
 {
-	public partial class Plansza : Gtk.Window
+	public partial class Plansza
 	{	private int num=0;
-		private bool czysc=new bool[9];
+		private bool[] czysc=new bool[9];
 		public EventBox ustalony;
 		public Frame ramka=new Frame();
 		PlanszaGra r_gra;
@@ -17,7 +17,7 @@ namespace Sudoku
 
 		public Plansza (PlanszaGra rodzic)
 		{
-			Array.Clear (czysc, 0, czysc.length);
+			Array.Clear (czysc, 0, czysc.Length);
 			r_gra = rodzic;
 			ustalony = new EventBox ();
 			this.ustalony.Events |= Gdk.EventMask.ButtonPressMask;

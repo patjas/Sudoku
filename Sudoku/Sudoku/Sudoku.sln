@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku", "Sudoku.csproj", "{4A3044A6-1E07-4E32-8067-65CA77876396}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{59A39197-A6E4-4509-A43D-293F5E5DE0CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,7 @@ Global
 		{4A3044A6-1E07-4E32-8067-65CA77876396}.Debug|x86.Build.0 = Debug|x86
 		{4A3044A6-1E07-4E32-8067-65CA77876396}.Release|x86.ActiveCfg = Release|x86
 		{4A3044A6-1E07-4E32-8067-65CA77876396}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal

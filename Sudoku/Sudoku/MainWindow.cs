@@ -18,8 +18,7 @@ public partial class MainWindow: Gtk.Window
 
 	protected void OnGenerateSudClicked (object sender, EventArgs e)
 	{
-			Plansza plansza_sud = new Plansza ();
-			plansza_sud.ShowAll();
+			
 
 	}
 }
