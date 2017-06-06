@@ -2,9 +2,9 @@
 
 namespace Sudoku
 {
-	public partial class Met_gene
+	public partial class Met_gener
 	{
-		private void GenerujPodst ( int[,] area )
+		public static void GenerujPodst ( int[,] area )
 		{
 			for (int i = 0; i < 9; i++) 
 			{	for (int j = 0; j < 9; i++) 
@@ -17,7 +17,7 @@ namespace Sudoku
 			}
 		}
 
-		private void ZamienWiersz(int [,] area, int start, int end)
+		public void ZamienWiersz(int [,] area, int start, int end)
 		{
 			
 				for (int i = 0; i < 9; i++) 
@@ -36,7 +36,7 @@ namespace Sudoku
 
 		}
 
-		private void ZamienKol(int [,] area, int box, int start, int end)
+		public void ZamienKol(int [,] area, int box, int start, int end)
 		{for(int i=0;i<9;i++)
 			{
 				int tmp;

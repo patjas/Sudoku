@@ -5,8 +5,8 @@ using System.Collections.Generic;
 namespace Sudoku
 {
 	public partial class PlanszBox
-	{	private Frame pRamka;
-		private List<Plansza> lista=new List<Plansza>();
+	{	public Frame p_ramka;
+		public List<Plansza> lista=new List<Plansza>();
 		PlanszaGra p_gra;
 
 		public PlanszBox (PlanszaGra rodzic)
@@ -18,8 +18,8 @@ namespace Sudoku
 				lista.Add (new PlanszaGra(p_gra));
 				fTab.Attach (lista [i].ustalony, (int)i % 3, (int)i % 3 + 1, (int)Math.Floor ((double)i / 3d),
 					(int)Math.Floor ((double)i / 3d) + 1);
-				pRamka = new Frame ();
-				pRamka.Add (fTab);
+				p_ramka = new Frame ();
+				p_ramka.Add (fTab);
 			}
 				
 

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace Sudoku
 {
 	public partial class Plansza
-	{	private int num=0;
+	{	public int num=0;
 		private bool[] czysc=new bool[9];
 		public EventBox ustalony;
 		public Frame ramka=new Frame();
@@ -33,23 +33,25 @@ namespace Sudoku
 			foreach (PlanszBox pb in r_gra.k_boxes) {
 				foreach (Plansza pl in pb.lista) {
 					if (f.set == false)
-						f.ustalony.ModifyBg (StateType.Normal, Globals.nieaktywny);
+						f.ustalony.ModifyBg (StateType.Normal, stan.nieaktywny);
 					else
-						f.ustalony.ModifyBg (StateType.Normal, Globals.zablokowany);
+						f.ustalony.ModifyBg (StateType.Normal, stan.zablokowany);
 				}
 			}
 			if (this.set == false)
-				this.ustalony.ModifyBg (StateType.Normal, Globals.aktywny);
+				this.ustalony.ModifyBg (StateType.Normal, stan.aktywny);
 			else
-				this.ustalony.ModifyBg (StateType.Normal, Globals.aktyw_zabl);
+				this.ustalony.ModifyBg (StateType.Normal, stan.aktyw_zabl);
 
 			r_gra.wybrany = this;
-			foreach (PlanszBox pb in r_gra.k_boxes) {	
-				foreach (Plansza p in pb.lista) {
+			foreach (PlanszBox pb in r_gra.k_boxes) 
+			{	
+				foreach (Plansza p in pb.lista) 
+				{
 					if (p == this)
 						continue;
 					if (p.num == this.num && num != 0)
-						p.ustalony.ModifyBg (StateType.Normal, Globals.samenum);
+						p.ustalony.ModifyBg (StateType.Normal, stan.samenum);
 				}
 			}
 		}
