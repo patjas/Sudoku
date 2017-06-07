@@ -11,11 +11,11 @@ namespace Sudoku
 			G_aktual=s;
 		}
 
-		private static void ustawLiczba(Object obj, EventArgs args, int wybr_lic, string typ)
+		public static void ustawLiczba(Object obj, EventArgs args, int wybr_lic, string typ)
 		{
-			if (typ = "Pen")
 				G_aktual.ustaw_pole (wybr_lic);
 		}
+
 	}
 }
 

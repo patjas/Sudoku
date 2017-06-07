@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Sudoku
 {
-	public partial class PlanszaGra: Met_gener 
+	public partial class PlanszaGra
 	{	
 		private int [,] zapis = new int[9,9];
 		private bool gra_wystart=false;
@@ -13,18 +13,18 @@ namespace Sudoku
 		public List<PlanszBox> k_boxes = new List<PlanszBox> ();
 
 
-		public PlanszaGra (Table pTab, int row, int col, int rowspan, int colspan)
+		public PlanszaGra (Table pTab, uint row, uint col, uint rowspan, uint colspan)
 		{
-			AspectFrame m_ramka=AspectFrame("Sudoku",0,0,1,false);
+			AspectFrame m_ramka=new AspectFrame("Sudoku",0,0,1,false);
 			Table localtab=new Table(9,9,false);
 			m_ramka.Add (localtab);
-			localtab.Attach (m_ramka, col, col + colspan, row, row + rowspan);
+			pTab.Attach (m_ramka, col, col + colspan, row, row + rowspan);
 
-			for (int i; i < 9; i++) 
+			for (int i=0; i < 9; i++) 
 			{	
 				k_boxes.Add (new PlanszBox (this));
-				localtab.Attach (k_boxes [i].p_ramka, (int)i % 3, (int)i % 3 + 1, (int)((double)i / 3d), 
-					(int)((double)i / 3d) + 1);
+				localtab.Attach (k_boxes [i].p_ramka, (uint)i % 3, (uint)i % 3 + 1, (uint)((double)i / 3d), 
+					(uint)((double)i / 3d) + 1);
 				
 			}
 		}
@@ -76,9 +76,11 @@ namespace Sudoku
 
 				switch (r) {
 				case 1:
-					Met_gener.ZamienWiersz (area, rand.Next (0, 3), rand.Next (0, 3), rand.Next (0, 3));
+					Met_gener.ZamienWiersz (area, rand.Next (0, 3), rand.Next (0, 3));
+					break;
 				case 2:
 					Met_gener.ZamienKol (area, rand.Next (0, 3), rand.Next (0, 3), rand.Next (0, 3));
+					break;
 				}
 			}
 
@@ -98,7 +100,7 @@ namespace Sudoku
 				int w=rand.Next(0,9);
 				int f=rand.Next(0,9);
 
-				if(k_boxes[w].lista[f].set=true)
+				if(this.k_boxes[w].lista[f].set==true)
 				{
 						k_boxes[w].lista[f].set=false;
 						k_boxes[w].lista[f].num=0;
@@ -110,7 +112,7 @@ namespace Sudoku
 
 			foreach (PlanszBox pb in this.k_boxes)
 				foreach (Plansza pl in pb.lista)
-					if (pl.set = false)
+					if (pl.set == false)
 						pl.ustalony.ModifyBg (StateType.Normal, stan.nieaktywny);
 			gra_wystart = true;
 

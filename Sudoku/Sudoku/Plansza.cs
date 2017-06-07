@@ -9,7 +9,7 @@ namespace Sudoku
 	{	public int num=0;
 		private bool[] czysc=new bool[9];
 		public EventBox ustalony;
-		public Frame ramka=new Frame();
+		public Frame s_ramka=new Frame();
 		PlanszaGra r_gra;
 		public bool set=true;
 		private Table tab = new Table(9,9,false);
@@ -23,7 +23,7 @@ namespace Sudoku
 			this.ustalony.Events |= Gdk.EventMask.ButtonPressMask;
 			this.ustalony.ButtonPressEvent += klikniete;
 			this.ustalony.BorderWidth = 0;
-			this.ustalony.Add (ramka);
+			this.ustalony.Add (s_ramka);
 			this.ustalony.Add (this.tab);
 			this.aktualizuj ();
 		}

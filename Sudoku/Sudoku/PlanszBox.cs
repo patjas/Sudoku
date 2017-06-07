@@ -15,9 +15,9 @@ namespace Sudoku
 			Table fTab = new Table (9,9,false);
 			for (int i = 0; i < 9; i++) 
 			{
-				lista.Add (new PlanszaGra(p_gra));
-				fTab.Attach (lista [i].ustalony, (int)i % 3, (int)i % 3 + 1, (int)Math.Floor ((double)i / 3d),
-					(int)Math.Floor ((double)i / 3d) + 1);
+				lista.Add (new Plansza(p_gra));
+				fTab.Attach (lista [i].ustalony, (uint)i % 3, (uint)i % 3 + 1, (uint)Math.Floor ((double)i / 3d),
+					(uint)Math.Floor ((double)i / 3d) + 1);
 				p_ramka = new Frame ();
 				p_ramka.Add (fTab);
 			}

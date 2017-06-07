@@ -26,7 +26,6 @@
             <property name="Type">TextOnly</property>
             <property name="Label" translatable="yes">Generuj sudoku</property>
             <property name="UseUnderline">True</property>
-            <signal name="Clicked" handler="OnGenerateSudClicked" />
           </widget>
           <packing>
             <property name="X">114</property>

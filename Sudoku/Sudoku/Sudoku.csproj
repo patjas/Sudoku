@@ -79,6 +79,6 @@
     <Compile Include="Met_gener.cs" />
 =======
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; ece2dcd6a9bdbd25d062ec7a0fa526126f72b1bf
-  <Compile Include="PlanszBox.cs" /><Compile Include="ObslugaWejscia.cs" /><Compile Include="PlanszaGra.cs" /><Compile Include="stan.cs" /></ItemGroup>
+  <Compile Include="PlanszBox.cs" /><Compile Include="ObslugaWejscia.cs" /><Compile Include="PlanszaGra.cs" /><Compile Include="stan.cs" /><Compile Include="liczbaPrzyciski.cs" /></ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
