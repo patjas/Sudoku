@@ -30,8 +30,10 @@ namespace Sudoku
 
 		private void klikniete(System.Object obj, EventArgs args)
 		{
-			foreach (PlanszBox pb in r_gra.k_boxes) {
-				foreach (Plansza pl in pb.lista) {
+			foreach (PlanszBox pb in r_gra.k_boxes) 
+			{
+				foreach (Plansza pl in pb.lista)
+				{
 					if (pl.set == false)
 						pl.ustalony.ModifyBg (StateType.Normal, stan.nieaktywny);
 					else
@@ -54,6 +56,12 @@ namespace Sudoku
 						p.ustalony.ModifyBg (StateType.Normal, stan.samenum);
 				}
 			}
+		}
+
+		public void aktualizuj()
+		{
+			int h = this.s_ramka.Allocation.Height;
+
 		}
 			
 	}

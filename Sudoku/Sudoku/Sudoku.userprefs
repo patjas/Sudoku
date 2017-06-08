@@ -1,14 +1,16 @@
 ﻿<Properties StartupItem="Sudoku.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PlanszaGra.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Plansza.cs">
     <Files>
-      <File FileName="Plansza.cs" Line="31" Column="9" />
-      <File FileName="Met_gener.cs" Line="26" Column="30" />
-      <File FileName="PlanszBox.cs" Line="21" Column="11" />
-      <File FileName="ObslugaWejscia.cs" Line="18" Column="4" />
-      <File FileName="PlanszaGra.cs" Line="12" Column="10" />
+      <File FileName="Plansza.cs" Line="37" Column="10" />
+      <File FileName="Met_gener.cs" Line="39" Column="17" />
+      <File FileName="PlanszBox.cs" Line="19" Column="94" />
+      <File FileName="ObslugaWejscia.cs" Line="14" Column="9" />
+      <File FileName="PlanszaGra.cs" Line="67" Column="35" />
       <File FileName="MainWindow.cs" Line="17" Column="3" />
       <File FileName="stan.cs" Line="14" Column="3" />
+      <File FileName="liczbaPrzyciski.cs" Line="36" Column="5" />
+      <File FileName="gtk-gui/Sudoku.MainWindow.cs" Line="42" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

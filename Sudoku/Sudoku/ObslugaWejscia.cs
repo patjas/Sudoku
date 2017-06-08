@@ -6,7 +6,7 @@ namespace Sudoku
 	{	
 		static PlanszaGra G_aktual;
 
-		private static void ustawG_cel (PlanszaGra s)
+		public static void ustawG_cel (PlanszaGra s)
 		{ 
 			G_aktual=s;
 		}
