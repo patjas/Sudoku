@@ -75,11 +75,10 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Plansza.cs" />
-    <Compile Include="gtk-gui\Sudoku.Plansza.cs" />
     <Compile Include="gtk-gui\Sudoku.MainWindow.cs" />
     <Compile Include="Met_gener.cs" />
 =======
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; ece2dcd6a9bdbd25d062ec7a0fa526126f72b1bf
-  <Compile Include="PlanszBox.cs" /><Compile Include="ObslugaWejscia.cs" /><Compile Include="PlanszaGra.cs" /><Compile Include="stan.cs" /><Compile Include="liczbaPrzyciski.cs" /></ItemGroup>
+  <Compile Include="PlanszBox.cs" /><Compile Include="ObslugaWejscia.cs" /><Compile Include="PlanszaGra.cs" /><Compile Include="stan.cs" /><Compile Include="liczbaPrzyciski.cs" /><Compile Include="OknoStartowe.cs" /></ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

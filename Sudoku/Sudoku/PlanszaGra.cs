@@ -47,7 +47,7 @@ namespace Sudoku
 			foreach (PlanszBox pb in k_boxes) 
 			{
 				foreach (Plansza pl in pb.lista) {
-					pl.update ();
+					pl.aktualizuj ();
 				}
 			}
 		}
@@ -58,7 +58,7 @@ namespace Sudoku
 			{
 				foreach (Plansza pl in pb.lista) 
 				{
-					pl.update ();
+					pl.aktualizuj ();
 				}
 		
 			}

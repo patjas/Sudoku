@@ -17,3 +17,5 @@
 /home/patrykj/Pulpit/Sudoku/Sudoku/Sudoku/obj/x86/Debug/Sudoku.gtk-gui.gui.stetic
 /home/patrykj/Pulpit/Sudoku/Sudoku/Sudoku/obj/x86/Debug/Sudoku.exe
 /home/patrykj/Pulpit/Sudoku/Sudoku/Sudoku/obj/x86/Debug/Sudoku.exe.mdb
+/home/patrykj/Pulpit/Sudoku/Sudoku/Sudoku/bin/Debug/Sudoku.exe.mdb
+/home/patrykj/Pulpit/Sudoku/Sudoku/Sudoku/bin/Debug/Sudoku.exe

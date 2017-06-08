@@ -13,7 +13,7 @@ namespace Sudoku
 		PlanszaGra r_gra;
 		public bool set=true;
 		private Table tab = new Table(9,9,false);
-		private List<Label>SmallDrafts = new List<Label>();
+		private Label G_Etykieta;
 
 		public Plansza (PlanszaGra rodzic)
 		{
@@ -60,8 +60,24 @@ namespace Sudoku
 
 		public void aktualizuj()
 		{
-			int h = this.s_ramka.Allocation.Height;
+			
 
+			if(this.set==false)
+			{	this.tab.SetSizeRequest (0, 0);
+				this.G_Etykieta.Text = this.num.ToString ();
+				if (num == 0) 
+					this.G_Etykieta.Text = "";
+			}
+			else 
+			{
+				this.tab.SetSizeRequest (0, 0);
+				this.ustalony.ModifyBg (StateType.Normal, stan.zablokowany);
+				this.G_Etykieta.Text = this.num.ToString ();
+				if (num == 0)
+					this.G_Etykieta.Text = "";
+			}
+
+			this.tab.Attach (this.G_Etykieta, 1, 2, 1, 2);
 		}
 			
 	}
