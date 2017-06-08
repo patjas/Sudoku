@@ -39,7 +39,6 @@ namespace Sudoku
 			this.DefaultHeight = 176;
 			this.Show ();
 			this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
-
 		}
 	}
 }

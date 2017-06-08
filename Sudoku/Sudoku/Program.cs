@@ -43,7 +43,7 @@ namespace Sudoku
 		public static void Main(string[] args)
 		{
 			Application.Init ();
-			//TRZEBA TU UZUPEŁNIĆ !!!!!
+			new OknoStart ();
 			Application.Run ();
 		}
 	}

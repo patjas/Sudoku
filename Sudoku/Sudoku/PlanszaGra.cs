@@ -42,29 +42,8 @@ namespace Sudoku
 			}
 		}
 
-		private void aktualizuj_wszystko(object obj, EventArgs args)
-		{
-			foreach (PlanszBox pb in k_boxes) 
-			{
-				foreach (Plansza pl in pb.lista) {
-					pl.aktualizuj ();
-				}
-			}
-		}
 
-		private void aktualizuj_wszystko()
-		{
-			foreach (PlanszBox pb in k_boxes) 
-			{
-				foreach (Plansza pl in pb.lista) 
-				{
-					pl.aktualizuj ();
-				}
-		
-			}
-		}
-
-		private void generuj(int ukryte)
+		public void generuj(int ukryte)
 		{
 			int[,] area = new int[9, 9];
 			Random rand = new Random ();
@@ -108,7 +87,7 @@ namespace Sudoku
 				}
 			}
 
-			aktualizuj_wszystko ();
+
 
 			foreach (PlanszBox pb in this.k_boxes)
 				foreach (Plansza pl in pb.lista)

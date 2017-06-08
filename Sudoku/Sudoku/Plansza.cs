@@ -25,7 +25,7 @@ namespace Sudoku
 			this.ustalony.BorderWidth = 0;
 			this.ustalony.Add (s_ramka);
 			this.ustalony.Add (this.tab);
-			this.aktualizuj ();
+
 		}
 
 		private void klikniete(System.Object obj, EventArgs args)
@@ -58,28 +58,7 @@ namespace Sudoku
 			}
 		}
 
-		public void aktualizuj()
-		{
-			
 
-			if(this.set==false)
-			{	this.tab.SetSizeRequest (0, 0);
-				this.G_Etykieta.Text = this.num.ToString ();
-				if (num == 0) 
-					this.G_Etykieta.Text = "";
-			}
-			else 
-			{
-				this.tab.SetSizeRequest (0, 0);
-				this.ustalony.ModifyBg (StateType.Normal, stan.zablokowany);
-				this.G_Etykieta.Text = this.num.ToString ();
-				if (num == 0)
-					this.G_Etykieta.Text = "";
-			}
-
-			this.tab.Attach (this.G_Etykieta, 1, 2, 1, 2);
-		}
-			
 	}
 }
 
