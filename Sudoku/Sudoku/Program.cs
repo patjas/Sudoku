@@ -1,11 +1,13 @@
 ﻿using System;
 using Gtk;
 using System.Drawing;
+using System.Linq;
 
 namespace Sudoku
 {
 	public class sudoku: Window
 	{
+		int ammount = 30;
 		private const int ekr_wys=600;
 		private const int ekr_szer = 600;
 		
@@ -17,7 +19,7 @@ namespace Sudoku
 			};
 
 			okno.SetSizeRequest (ekr_szer, ekr_wys);
-			okno.BorderWidth = 15;
+			okno.BorderWidth = 10;
 
 			Table m_tab = new Table (5, 8, false);
 
@@ -29,11 +31,16 @@ namespace Sudoku
 			okno.Add (m_tab);
 
 			MenuBar mb = new MenuBar ();
-			MenuItem zamknijMenu = new MenuItem ("Wyjdź");
-			zamknijMenu.ButtonPressEvent += delegate {
+			MenuItem zamknij_gra = new MenuItem ("Wyjdź");
+			MenuItem nowa_gra = new MenuItem ("Nowa gra");
+			zamknij_gra.ButtonPressEvent += delegate {
 				Application.Quit ();
 			};
-			mb.Append (zamknijMenu);
+			nowa_gra.ButtonPressEvent += delegate {
+				pg_akt.generuj (this.ammount);
+			};
+			mb.Append(nowa_gra);
+			mb.Append (zamknij_gra);
 
 			okno.Resizable = false;
 			m_tab.Attach (mb, 0, 9, 0, 1);
@@ -43,7 +50,7 @@ namespace Sudoku
 		public static void Main(string[] args)
 		{
 			Application.Init ();
-			new OknoStart ();
+			new sudoku ();
 			Application.Run ();
 		}
 	}

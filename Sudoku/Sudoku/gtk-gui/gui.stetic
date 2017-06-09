@@ -103,4 +103,31 @@
       </widget>
     </child>
   </widget>
+  <widget class="Gtk.Window" id="Sudoku.MainWindow" design-size="349 176">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">MainWindow</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Button" id="generate_sud">
+            <property name="MemberName" />
+            <property name="WidthRequest">123</property>
+            <property name="HeightRequest">72</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Generuj sudoku</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">114</property>
+            <property name="Y">48</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
 </stetic-interface>

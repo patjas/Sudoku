@@ -13,7 +13,6 @@ public partial class MainWindow: Gtk.Window
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
 	{
 		Application.Quit ();
-		a.RetVal = true;
 	}
 }
 }

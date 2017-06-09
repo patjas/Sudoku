@@ -63,6 +63,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Drawing" />
+    <Reference Include="gtk-dotnet, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-dotnet-2.0</Package>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -78,6 +81,6 @@
     <Compile Include="Met_gener.cs" />
 =======
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; ece2dcd6a9bdbd25d062ec7a0fa526126f72b1bf
-  <Compile Include="PlanszBox.cs" /><Compile Include="ObslugaWejscia.cs" /><Compile Include="PlanszaGra.cs" /><Compile Include="stan.cs" /><Compile Include="liczbaPrzyciski.cs" /><Compile Include="OknoStart.cs" /><Compile Include="gtk-gui\Sudoku.OknoStart.cs" /></ItemGroup>
+  <Compile Include="PlanszBox.cs" /><Compile Include="ObslugaWejscia.cs" /><Compile Include="PlanszaGra.cs" /><Compile Include="stan.cs" /><Compile Include="liczbaPrzyciski.cs" /><Compile Include="OknoStart.cs" /><Compile Include="gtk-gui\Sudoku.OknoStart.cs" /><Compile Include="gtk-gui\Sudoku.MainWindow.cs" /></ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,30 +1,27 @@
-﻿using System;
+﻿﻿using System;
 using Gtk;
 using System.Collections.Generic;
 
 namespace Sudoku
 {
-	public partial class PlanszBox
-	{	public Frame p_ramka;
-		public List<Plansza> lista=new List<Plansza>();
+	public class PlanszBox
+	{
+		public Frame m_ramka;
+		public List<Plansza> lista = new List<Plansza>();
 		PlanszaGra p_gra;
-
 		public PlanszBox (PlanszaGra rodzic)
 		{
 			p_gra = rodzic;
-			Table fTab = new Table (9,9,false);
+			Table pTab = new Table (9, 9, false);
 			for (int i = 0; i < 9; i++) 
 			{
-				lista.Add (new Plansza(p_gra));
-				fTab.Attach (lista [i].ustalony, (uint)i % 3, (uint)i % 3 + 1, (uint)Math.Floor ((double)i / 3d),
-					(uint)Math.Floor ((double)i / 3d) + 1);
-				p_ramka = new Frame ();
-				p_ramka.Add (fTab);
+				lista.Add(new Plansza(p_gra));
+				pTab.Attach (lista [i].ustalony, (uint)i % 3, (uint)i % 3 + 1, (uint)Math.Floor ((double)i / 3d), (uint)Math.Floor ((double)i / 3d) + 1);
 			}
-				
-
-
+			m_ramka = new Frame ();
+			m_ramka.Add (pTab);
 		}
 	}
 }
+
 

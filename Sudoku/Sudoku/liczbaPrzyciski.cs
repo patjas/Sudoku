@@ -25,7 +25,7 @@ namespace Sudoku
 			{
 				przyciski.Add (new Button ((i + 1).ToString()));
 				var aktualnie = i + 1;
-				przyciski [i].Clicked += (sender, EventArgs) => ObslugaWejscia.ustawLiczba (sender, EventArgs, aktualnie, nazwa); 
+				przyciski [i].Clicked += (sender, EventArgs) => ObslugaWejscia.ustawLiczba (sender, EventArgs, aktualnie); 
 				localtab.Attach (przyciski [i], 0, 1, (uint)i, (uint)i + 1);
 			}
 
