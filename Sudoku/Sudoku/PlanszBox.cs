@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using Gtk;
 using System.Collections.Generic;
 
@@ -12,16 +12,14 @@ namespace Sudoku
 		public PlanszBox (PlanszaGra rodzic)
 		{
 			p_gra = rodzic;
-			Table pTab = new Table (9, 9, false);
-			for (int i = 0; i < 9; i++) 
-			{
+			Table b_Tab = new Table (9, 9, false);
+			for (int i = 0; i < 9; i++) {
 				lista.Add(new Plansza(p_gra));
-				pTab.Attach (lista [i].ustalony, (uint)i % 3, (uint)i % 3 + 1, (uint)Math.Floor ((double)i / 3d), (uint)Math.Floor ((double)i / 3d) + 1);
+				b_Tab.Attach (lista [i].ustalony, (uint)i % 3, (uint)i % 3 + 1, (uint)Math.Floor ((double)i / 3d), (uint)Math.Floor ((double)i / 3d) + 1);
 			}
-			m_ramka = new Frame ();
-			m_ramka.Add (pTab);
+			m_ramka= new Frame ();
+			m_ramka.Add (b_Tab);
 		}
 	}
 }
-
 

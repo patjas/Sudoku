@@ -3,19 +3,16 @@
 namespace Sudoku
 {
 	public class ObslugaWejscia
-	{	
-		static PlanszaGra G_aktual;
+	{
+		static PlanszaGra pl_akt;
 
-		public static void ustawG_cel (PlanszaGra s)
-		{ 
-			G_aktual=s;
-		}
-
-		public static void ustawLiczba(Object obj, EventArgs args, int wybr_lic)
+		public static void ustaw_cel(PlanszaGra s)
 		{
-				G_aktual.ustaw_pole (wybr_lic);
+			pl_akt = s;
 		}
-
+		public static void ustaw_liczba(Object obj, EventArgs args, int liczba)
+		{
+			pl_akt.ustaw_pole (liczba);
+		}
 	}
 }
-

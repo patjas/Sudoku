@@ -1,6 +1,19 @@
 ﻿<Properties StartupItem="Sudoku/Sudoku.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sudoku/Program.cs">
+    <Files>
+      <File FileName="Sudoku/PlanszaGra.cs" Line="17" Column="62" />
+      <File FileName="Sudoku/Plansza.cs" Line="6" Column="17" />
+      <File FileName="Sudoku/cyfryPrzyciski.cs" Line="26" Column="29" />
+      <File FileName="Sudoku/MainWindow.cs" Line="1" Column="1" />
+      <File FileName="Sudoku/Met_gener.cs" Line="3" Column="17" />
+      <File FileName="Sudoku/ObslugaWejscia.cs" Line="3" Column="17" />
+      <File FileName="Sudoku/PlanszBox.cs" Line="5" Column="17" />
+      <File FileName="Sudoku/Program.cs" Line="37" Column="27" />
+      <File FileName="Sudoku/stan.cs" Line="5" Column="17" />
+      <File FileName="Sudoku/poziom_wybor.cs" Line="4" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

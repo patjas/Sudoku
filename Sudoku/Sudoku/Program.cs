@@ -12,37 +12,32 @@ namespace Sudoku
 
 		public sudoku(): base("")
 		{
-			Window okno = new Window ("Sudoku");
-			okno.DeleteEvent += delegate {
-				Application.Quit ();
-			};
-
+			Window okno = new Window ("Gra Sudoku");
+			okno.DeleteEvent += delegate 
+			{ Application.Quit (); };
 			okno.SetSizeRequest (ekr_szer, ekr_wys);
 			okno.BorderWidth = 10;
 
 			Table m_tab = new Table (5, 8, false);
-
 			PlanszaGra pg_akt = new PlanszaGra (m_tab, 1, 1, 4, 6);
-			ObslugaWejscia.ustawG_cel (pg_akt);
-			new liczbaPrzyciski (m_tab, pg_akt, "Cyfry", 1, 0, 4, 1);
-
+			ObslugaWejscia.ustaw_cel (pg_akt);
+			new cyfryPrzyciski (m_tab, pg_akt, "Cyfry", 1, 0, 4, 1);
 			m_tab.Show ();
 			okno.Add (m_tab);
 
-			pg_akt.generuj (50);
+			MenuBar mb = new MenuBar ();
+			MenuItem zamknij = new MenuItem ("Koniec");
+			MenuItem nowa_gra = new MenuItem ("Nowa gra");
+			zamknij.ButtonPressEvent += delegate {	Application.Quit(); };
+			//nowa_gra.ButtonPressEvent += delegate {new poziom_wybor(pg_akt);};
+			mb.Append (zamknij);
+			//mb.Append (nowa_gra);
 
-			Button zamknij_gra = new Button ("Wyjdź");
-			zamknij_gra.Clicked += delegate {
-				Application.Quit ();
-			};
-			m_tab.Add (zamknij_gra);
-
+			m_tab.Attach (mb, 0, 9, 0, 1);
 			okno.Resizable = false;
+			pg_akt.generuj (40);
 			okno.ShowAll ();
 		}
-
-	
-
 
 		public static void Main(string[] args)
 		{
