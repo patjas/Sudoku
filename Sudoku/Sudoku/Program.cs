@@ -7,10 +7,9 @@ namespace Sudoku
 {
 	public class sudoku: Window
 	{
-		int ammount = 30;
 		private const int ekr_wys=600;
 		private const int ekr_szer = 600;
-		
+
 		public sudoku(): base("")
 		{
 			Window okno = new Window ("Sudoku");
@@ -30,22 +29,20 @@ namespace Sudoku
 			m_tab.Show ();
 			okno.Add (m_tab);
 
-			MenuBar mb = new MenuBar ();
-			MenuItem zamknij_gra = new MenuItem ("Wyjdź");
-			MenuItem nowa_gra = new MenuItem ("Nowa gra");
-			zamknij_gra.ButtonPressEvent += delegate {
+			pg_akt.generuj (50);
+
+			Button zamknij_gra = new Button ("Wyjdź");
+			zamknij_gra.Clicked += delegate {
 				Application.Quit ();
 			};
-			nowa_gra.ButtonPressEvent += delegate {
-				pg_akt.generuj (this.ammount);
-			};
-			mb.Append(nowa_gra);
-			mb.Append (zamknij_gra);
+			m_tab.Add (zamknij_gra);
 
 			okno.Resizable = false;
-			m_tab.Attach (mb, 0, 9, 0, 1);
 			okno.ShowAll ();
 		}
+
+	
+
 
 		public static void Main(string[] args)
 		{

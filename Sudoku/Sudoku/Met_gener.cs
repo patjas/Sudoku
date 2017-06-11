@@ -7,12 +7,12 @@ namespace Sudoku
 		public static void GenerujPodst ( int[,] area )
 		{
 			for (int i = 0; i < 9; i++) 
-			{	for (int j = 0; j < 9; i++) 
+			{	for (int j = 0; j < 9; j++) 
 				{
-					if (i + j + 1 < 10)
-						area [(int)Math.Floor (i /3d) + i % 3 * 3, j] = i + j + 1;
+					if (j + i + 1 <= 9)
+						area [(int)Math.Floor (i / 3d) + i % 3 * 3, j] = j + 1 + i;
 					else
-						area [(int)Math.Floor (i /3d) + i % 3 * 3, j] = (i + j + 1)%9;
+						area [(int)Math.Floor (i / 3d) + i % 3 * 3, j] = j + 1 + i - 9;
 				}
 			}
 		}
@@ -37,7 +37,7 @@ namespace Sudoku
 		}
 
 		public static void ZamienKol(int [,] area, int box, int start, int end)
-		{for(int i=0;i<9;i++)
+		{for(int i=0;i<3;i++)
 			{
 				int tmp;
 				tmp = area [box * 3, end*3+i];
