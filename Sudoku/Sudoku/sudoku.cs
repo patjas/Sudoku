@@ -5,12 +5,12 @@ using System.Linq;
 
 namespace Sudoku
 {
-	public class sudoku: Window
+	public partial class sudoku: Gtk.Window
 	{
 		private const int ekr_wys=600;
 		private const int ekr_szer = 600;
 
-		public sudoku(): base("")
+		public sudoku(int zakryte): base("")
 		{
 			Window okno = new Window ("Gra Sudoku");
 			okno.DeleteEvent += delegate 
@@ -32,18 +32,19 @@ namespace Sudoku
 			//nowa_gra.ButtonPressEvent += delegate {new poziom_wybor(pg_akt);};
 			mb.Append (zamknij);
 			//mb.Append (nowa_gra);
-
 			m_tab.Attach (mb, 0, 9, 0, 1);
+
+			pg_akt.generuj (zakryte);
 			okno.Resizable = false;
-			pg_akt.generuj (40);
 			okno.ShowAll ();
 		}
 
-		public static void Main(string[] args)
+		public static void Main (string[] args)
 		{
 			Application.Init ();
-			new sudoku ();
+			new wybierz_poziom ();
 			Application.Run ();
+
 		}
 	}
 }

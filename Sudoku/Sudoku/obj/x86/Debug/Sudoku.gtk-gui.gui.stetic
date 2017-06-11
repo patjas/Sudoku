@@ -8,6 +8,158 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/Sudoku.exe" internal="true" />
   </import>
+  <widget class="Gtk.Window" id="Sudoku.poziom_wybór" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">poziom_wybór</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Sudoku.Window" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Window</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed2">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="label2">
+            <property name="MemberName" />
+            <property name="LabelProp" translatable="yes">label2</property>
+          </widget>
+          <packing>
+            <property name="X">157</property>
+            <property name="Y">58</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Sudoku.Window" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Window</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Sudoku.poziom_wybor" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">poziom_wybor</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="HeightRequest">50</property>
+            <property name="LabelProp" translatable="yes">Witamy w Sudoku! Wybierz poziom:</property>
+          </widget>
+          <packing>
+            <property name="X">49</property>
+            <property name="Y">31</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">GtkButton</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">156</property>
+            <property name="Y">98</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Sudoku.poziom_wybor" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">poziom_wybor</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Sudoku.wybierz_poziom" design-size="474 450">
+    <property name="MemberName" />
+    <property name="WidthRequest">450</property>
+    <property name="HeightRequest">380</property>
+    <property name="Title" translatable="yes">wybierz_poziom</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Resizable">False</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed4">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="label3">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="HeightRequest">50</property>
+            <property name="LabelProp" translatable="yes">Witamy w Sudoku! Wybierz poziom:</property>
+          </widget>
+          <packing>
+            <property name="X">90</property>
+            <property name="Y">43</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button2">
+            <property name="MemberName" />
+            <property name="HeightRequest">50</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Łatwy (25 pól zakrytych)</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton2Clicked" />
+          </widget>
+          <packing>
+            <property name="X">155</property>
+            <property name="Y">94</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button3">
+            <property name="MemberName" />
+            <property name="HeightRequest">50</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Średni ( 40 pól zakrytych)</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton3Clicked" />
+          </widget>
+          <packing>
+            <property name="X">153</property>
+            <property name="Y">159</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button4">
+            <property name="MemberName" />
+            <property name="HeightRequest">50</property>
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">Trudny (55 pól zakrytych)</property>
+            <property name="UseUnderline">True</property>
+            <signal name="Clicked" handler="OnButton4Clicked" />
+          </widget>
+          <packing>
+            <property name="X">153</property>
+            <property name="Y">223</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
   <widget class="Gtk.Window" id="Sudoku.MainWindow" design-size="349 176">
     <property name="MemberName" />
     <property name="Title" translatable="yes">MainWindow</property>
@@ -42,145 +194,6 @@
           </packing>
         </child>
       </widget>
-    </child>
-  </widget>
-  <widget class="Gtk.Window" id="Sudoku.OknoStart" design-size="400 300">
-    <property name="MemberName" />
-    <property name="GeneratePublic">False</property>
-    <property name="Title" translatable="yes">OknoStart</property>
-    <property name="WindowPosition">CenterOnParent</property>
-    <child>
-      <widget class="Gtk.Fixed" id="fixed1">
-        <property name="MemberName" />
-        <property name="HasWindow">False</property>
-        <child>
-          <widget class="Gtk.Label" id="label1">
-            <property name="MemberName" />
-            <property name="WidthRequest">250</property>
-            <property name="HeightRequest">30</property>
-            <property name="LabelProp" translatable="yes">Wybierz poziom:</property>
-          </widget>
-          <packing>
-            <property name="X">74</property>
-            <property name="Y">42</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="button1">
-            <property name="MemberName" />
-            <property name="WidthRequest">100</property>
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Łatwy</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">151</property>
-            <property name="Y">92</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="button2">
-            <property name="MemberName" />
-            <property name="WidthRequest">100</property>
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Średni</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">152</property>
-            <property name="Y">137</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="button3">
-            <property name="MemberName" />
-            <property name="WidthRequest">100</property>
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Trudny</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">151</property>
-            <property name="Y">186</property>
-          </packing>
-        </child>
-      </widget>
-    </child>
-  </widget>
-  <widget class="Gtk.Window" id="Sudoku.poziom_wybor" design-size="400 300">
-    <property name="MemberName" />
-    <property name="Title" translatable="yes">OknoStart</property>
-    <property name="WindowPosition">CenterOnParent</property>
-    <child>
-      <widget class="Gtk.Fixed" id="fixed1">
-        <property name="MemberName" />
-        <property name="HasWindow">False</property>
-        <child>
-          <widget class="Gtk.Label" id="label1">
-            <property name="MemberName" />
-            <property name="WidthRequest">250</property>
-            <property name="HeightRequest">30</property>
-            <property name="LabelProp" translatable="yes">Wybierz poziom:</property>
-          </widget>
-          <packing>
-            <property name="X">74</property>
-            <property name="Y">42</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="button1">
-            <property name="MemberName" />
-            <property name="WidthRequest">100</property>
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Łatwy</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">151</property>
-            <property name="Y">92</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="button2">
-            <property name="MemberName" />
-            <property name="WidthRequest">100</property>
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Średni</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">152</property>
-            <property name="Y">137</property>
-          </packing>
-        </child>
-        <child>
-          <widget class="Gtk.Button" id="button3">
-            <property name="MemberName" />
-            <property name="WidthRequest">100</property>
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">Trudny</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">151</property>
-            <property name="Y">186</property>
-          </packing>
-        </child>
-      </widget>
-    </child>
-  </widget>
-  <widget class="Gtk.Window" id="Sudoku.poziom_wybor" design-size="400 300">
-    <property name="MemberName" />
-    <property name="Title" translatable="yes">poziom_wybor</property>
-    <property name="WindowPosition">CenterOnParent</property>
-    <child>
-      <placeholder />
     </child>
   </widget>
 </stetic-interface>

@@ -72,13 +72,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />
-    <Compile Include="MainWindow.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Plansza.cs" />
     <Compile Include="Met_gener.cs" />
 =======
 &gt;&gt;&gt;&gt;&gt;&gt;&gt; ece2dcd6a9bdbd25d062ec7a0fa526126f72b1bf
-  <Compile Include="PlanszBox.cs" /><Compile Include="ObslugaWejscia.cs" /><Compile Include="PlanszaGra.cs" /><Compile Include="stan.cs" /><Compile Include="gtk-gui\Sudoku.MainWindow.cs" /><Compile Include="cyfryPrzyciski.cs" /><Compile Include="gtk-gui\Sudoku.poziom_wybor.cs" /><Compile Include="poziom_wybor.cs" /></ItemGroup>
+  <Compile Include="PlanszBox.cs" /><Compile Include="ObslugaWejscia.cs" /><Compile Include="PlanszaGra.cs" /><Compile Include="stan.cs" /><Compile Include="cyfryPrzyciski.cs" /><Compile Include="wybierz_poziom.cs" /><Compile Include="gtk-gui\Sudoku.wybierz_poziom.cs" /><Compile Include="MainWindow.cs" /><Compile Include="gtk-gui\Sudoku.MainWindow.cs" /><Compile Include="sudoku.cs" /></ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
