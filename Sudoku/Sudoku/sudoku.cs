@@ -27,11 +27,8 @@ namespace Sudoku
 
 			MenuBar mb = new MenuBar ();
 			MenuItem zamknij = new MenuItem ("Koniec");
-			MenuItem nowa_gra = new MenuItem ("Nowa gra");
 			zamknij.ButtonPressEvent += delegate {	Application.Quit(); };
-			//nowa_gra.ButtonPressEvent += delegate {new poziom_wybor(pg_akt);};
 			mb.Append (zamknij);
-			//mb.Append (nowa_gra);
 			m_tab.Attach (mb, 0, 9, 0, 1);
 
 			pg_akt.generuj (zakryte);

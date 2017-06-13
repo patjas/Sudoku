@@ -34,6 +34,7 @@ namespace Sudoku
 				return;
 			if (wybrany.set == false) 
 			{
+				
 				if (wybrany.num != n)
 					wybrany.num = n;
 				else

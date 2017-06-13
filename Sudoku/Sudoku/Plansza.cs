@@ -61,10 +61,7 @@ namespace Sudoku
 		{
 			if (this.set == false) 
 			{
-				if (true) 
-				{
-					this.tab.SetSizeRequest (0, 0);
-				}
+				
 				this.etykieta.Text = this.num.ToString ();
 				if (num == 0) 
 				{

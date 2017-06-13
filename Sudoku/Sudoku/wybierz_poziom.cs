@@ -14,7 +14,6 @@ namespace Sudoku
 		protected void OnButton2Clicked (object sender, EventArgs e)
 		{
 			new sudoku (25);
-
 		}
 
 		protected void OnButton3Clicked (object sender, EventArgs e)
