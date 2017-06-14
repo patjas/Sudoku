@@ -15,9 +15,7 @@ namespace Sudoku
 			
 			pl_akt.ustaw_pole (liczba);
 
-			int a, b;
-
-			for ( int i = 0; i < 9; i++)
+			/*for ( int i = 0; i < 9; i++)
 			{	for ( int j = 0; j < 9; j++) 
 				{	
 					bool m=pl_akt.k_boxes[i].lista[j].Equals(pl_akt.wybrany.ustalony);
@@ -25,15 +23,12 @@ namespace Sudoku
 					{
 						for(int k=0;k<9;k++)
 						{
-							if (pl_akt.wybrany.num == pl_akt.k_boxes [k].lista [i].num)
+							if (pl_akt.wybrany.num == pl_akt.k_boxes [i].lista [k].num)
 								pl_akt.wybrany.ustalony.ModifyBg (Gtk.StateType.Normal, stan.samenum);
 						}
 					}
 				}
-			}
-
-
-
+			}*/
 
 			/*for (int i = 0; i < 9; i++)
 			{	for (int j = 0; j < 9; j++) 
