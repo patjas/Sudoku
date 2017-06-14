@@ -6,8 +6,8 @@ namespace Sudoku
 {
 	public class PlanszBox
 	{
-		public Frame m_ramka;
-		public List<Plansza> lista = new List<Plansza>();
+		protected internal Frame m_ramka;
+		protected internal List<Plansza> lista = new List<Plansza>();
 		PlanszaGra p_gra;
 		public PlanszBox (PlanszaGra rodzic)
 		{

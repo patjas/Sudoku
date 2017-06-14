@@ -8,9 +8,9 @@ namespace Sudoku
 {
 	public class PlanszaGra
 	{
-		
-		public Plansza wybrany;
-		public List<PlanszBox> k_boxes = new List<PlanszBox> ();
+		protected internal Plansza wybrany;
+		protected internal List<PlanszBox> k_boxes = new List<PlanszBox> ();
+
 		public PlanszaGra (Table pTab, uint row, uint col, uint rowspan, uint colspan)
 		{	
 			AspectFrame ramka_des = new AspectFrame ("Miłej zabawy!   : )", 0, 0, 1, false);

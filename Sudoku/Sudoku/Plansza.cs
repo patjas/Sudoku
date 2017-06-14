@@ -7,11 +7,11 @@ namespace Sudoku
 {
 	public class Plansza
 	{
-		public EventBox ustalony;
-		public int num = 0;
+		protected internal EventBox ustalony;
+		protected internal int num = 0;
 		private Frame s_ramka = new Frame();
 		PlanszaGra p_gra;
-		public bool set = true;
+		protected internal bool set = true;
 		private Table tab = new Table(9,9,false);
 		private Label etykieta = new Label(" ");
 

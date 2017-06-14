@@ -1,17 +1,10 @@
 ﻿<Properties StartupItem="Sudoku/Sudoku.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sudoku/cyfryPrzyciski.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sudoku/PlanszaGra.cs">
     <Files>
-      <File FileName="Sudoku/PlanszaGra.cs" Line="17" Column="62" />
-      <File FileName="Sudoku/Plansza.cs" Line="18" Column="4" />
-      <File FileName="Sudoku/cyfryPrzyciski.cs" Line="16" Column="4" />
-      <File FileName="Sudoku/MainWindow.cs" Line="1" Column="1" />
-      <File FileName="Sudoku/Met_gener.cs" Line="1" Column="1" />
-      <File FileName="Sudoku/ObslugaWejscia.cs" Line="18" Column="4" />
-      <File FileName="Sudoku/PlanszBox.cs" Line="5" Column="17" />
-      <File FileName="Sudoku/stan.cs" Line="1" Column="1" />
-      <File FileName="Sudoku/sudoku.cs" Line="1" Column="1" />
-      <File FileName="Sudoku/wybierz_poziom.cs" Line="16" Column="17" />
+      <File FileName="Sudoku/sudoku.cs" Line="15" Column="18" />
+      <File FileName="Sudoku/wybierz_poziom.cs" Line="28" Column="20" />
+      <File FileName="Sudoku/PlanszaGra.cs" Line="10" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

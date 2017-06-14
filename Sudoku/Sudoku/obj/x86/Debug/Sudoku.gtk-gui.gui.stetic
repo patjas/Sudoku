@@ -120,30 +120,6 @@
     <property name="Title" translatable="yes">poziom_wybor</property>
     <property name="WindowPosition">CenterOnParent</property>
     <child>
-      <widget class="Gtk.Fixed" id="fixed3">
-        <property name="MemberName" />
-        <property name="HasWindow">False</property>
-        <child>
-          <widget class="Gtk.ToggleButton" id="togglebutton1">
-            <property name="MemberName" />
-            <property name="CanFocus">True</property>
-            <property name="Type">TextOnly</property>
-            <property name="Label" translatable="yes">GtkToggleButton</property>
-            <property name="UseUnderline">True</property>
-          </widget>
-          <packing>
-            <property name="X">212</property>
-            <property name="Y">117</property>
-          </packing>
-        </child>
-      </widget>
-    </child>
-  </widget>
-  <widget class="Gtk.Window" id="Sudoku.poziom_wybor" design-size="400 300">
-    <property name="MemberName" />
-    <property name="Title" translatable="yes">poziom_wybor</property>
-    <property name="WindowPosition">CenterOnParent</property>
-    <child>
       <widget class="Gtk.Fixed" id="fixed1">
         <property name="MemberName" />
         <property name="HasWindow">False</property>
