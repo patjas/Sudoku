@@ -9,11 +9,12 @@ namespace Sudoku
 	{
 		public EventBox ustalony;
 		public int num = 0;
-		public Frame s_ramka = new Frame();
+		private Frame s_ramka = new Frame();
 		PlanszaGra p_gra;
 		public bool set = true;
 		private Table tab = new Table(9,9,false);
 		private Label etykieta = new Label(" ");
+
 		public Plansza (PlanszaGra rodzic)
 		{
 			p_gra = rodzic;

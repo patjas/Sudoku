@@ -8,14 +8,6 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/Sudoku.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="Sudoku.poziom_wybor" design-size="400 300">
-    <property name="MemberName" />
-    <property name="Title" translatable="yes">poziom_wybor</property>
-    <property name="WindowPosition">CenterOnParent</property>
-    <child>
-      <placeholder />
-    </child>
-  </widget>
   <widget class="Gtk.Window" id="Sudoku.wybierz_poziom" design-size="474 450">
     <property name="MemberName" />
     <property name="WidthRequest">450</property>
@@ -123,22 +115,6 @@
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Window" id="Sudoku.poziom_wybór" design-size="400 300">
-    <property name="MemberName" />
-    <property name="Title" translatable="yes">poziom_wybór</property>
-    <property name="WindowPosition">CenterOnParent</property>
-    <child>
-      <placeholder />
-    </child>
-  </widget>
-  <widget class="Gtk.Window" id="Sudoku.Window" design-size="400 300">
-    <property name="MemberName" />
-    <property name="Title" translatable="yes">Window</property>
-    <property name="WindowPosition">CenterOnParent</property>
-    <child>
-      <placeholder />
-    </child>
-  </widget>
   <widget class="Gtk.Window" id="Sudoku.poziom_wybor" design-size="400 300">
     <property name="MemberName" />
     <property name="Title" translatable="yes">poziom_wybor</property>
@@ -161,6 +137,58 @@
           </packing>
         </child>
       </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Sudoku.poziom_wybor" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">poziom_wybor</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Label" id="label1">
+            <property name="MemberName" />
+            <property name="WidthRequest">300</property>
+            <property name="HeightRequest">50</property>
+            <property name="LabelProp" translatable="yes">Witamy w Sudoku! Wybierz poziom:</property>
+          </widget>
+          <packing>
+            <property name="X">49</property>
+            <property name="Y">31</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="button1">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextOnly</property>
+            <property name="Label" translatable="yes">GtkButton</property>
+            <property name="UseUnderline">True</property>
+          </widget>
+          <packing>
+            <property name="X">156</property>
+            <property name="Y">98</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Sudoku.poziom_wybór" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">poziom_wybór</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Window" id="Sudoku.Window" design-size="400 300">
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">Window</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <child>
+      <placeholder />
     </child>
   </widget>
 </stetic-interface>

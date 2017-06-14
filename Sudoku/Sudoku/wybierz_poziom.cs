@@ -13,16 +13,19 @@ namespace Sudoku
 
 		protected void OnButton2Clicked (object sender, EventArgs e)
 		{
+			this.Destroy ();
 			new sudoku (25);
 		}
 
 		protected void OnButton3Clicked (object sender, EventArgs e)
 		{
+			this.Destroy ();
 			new sudoku (40);
 		}
 
 		protected void OnButton4Clicked (object sender, EventArgs e)
 		{
+			this.Destroy ();
 			new sudoku (55);
 		}
 	}

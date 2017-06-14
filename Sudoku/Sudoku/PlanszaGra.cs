@@ -8,8 +8,7 @@ namespace Sudoku
 {
 	public class PlanszaGra
 	{
-		public int [,]zapis = new int[9,9];	
-		public bool gra_wystart =false;
+		
 		public Plansza wybrany;
 		public List<PlanszBox> k_boxes = new List<PlanszBox> ();
 		public PlanszaGra (Table pTab, uint row, uint col, uint rowspan, uint colspan)
@@ -82,8 +81,6 @@ namespace Sudoku
 					this.k_boxes [i].lista [j].set = true;
 				}
 
-			zapis = area;
-
 			while (ukryte > 0) 
 			{
 				int w = rand.Next (0, 9);
@@ -102,7 +99,6 @@ namespace Sudoku
 				foreach (Plansza pl in pb.lista)
 					if (pl.set == false)
 						pl.ustalony.ModifyBg (StateType.Normal, stan.nieaktywny);
-			gra_wystart = true;
 		}
 	}
 }
